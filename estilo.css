@@ -1,3 +1,48 @@
 body {
-   background-color: #3591b6;
+   font-family: "Audiowide", sans-serif;;
+   background-color: white;
+   margin: 0;
+}
+a {
+    color: black;
+    text-decoration: none
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3591b6;
+    align-items: self-end;
+    padding: 10px;
+}
+
+.titulo {
+    display: flex;
+    min-height: 70px;
+    color: #eed80f;
+} 
+
+.titulo:hover, .titulo:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+          
+}
+
+nav a{
+   font-weight: 600;
+   padding: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
 }
