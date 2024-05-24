@@ -1,6 +1,6 @@
 body {
    font-family: "Audiowide", sans-serif;;
-   background-color: white;
+   background-color:  #3591b6;
    margin: 0;
 }
 a {
@@ -10,15 +10,22 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #3591b6;
+    background-color: white;
     align-items: self-end;
     padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 100px;
 }
 
 .titulo {
     display: flex;
     min-height: 70px;
-    color: #eed80f;
 } 
 
 .titulo:hover, .titulo:focus {
