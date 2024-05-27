@@ -38,6 +38,7 @@ header {
 nav a{
    font-weight: 600;
    padding: 10px;
+   
 }
 
 nav a:hover {
@@ -52,4 +53,8 @@ nav a:hover {
     nav{
         padding: 10px 0px;
     }
+}
+
+nav div.generos{
+    padding: 0px;
 }
