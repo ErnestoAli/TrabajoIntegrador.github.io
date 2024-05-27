@@ -75,7 +75,78 @@
        </div>
 
     </nav>
-    
+   
+
+    <div class="formulario">
+        <form id="formularioContacto">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="input" required maxlength="50">
+                <span class="error" id="errorNombre"></span>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="input" required>
+                <span class="error" id="errorEmail"></span>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="input" required rows="5"></textarea>
+                <span class="error" id="errorMensaje"></span>
+            </div>
+
+            <div class="campo">
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
+
+        <div class="datos-enviados" id="datosEnviados">
+            <h2>Datos Enviados</h2>
+            <p id="nombreEnviado"></p>
+            <p id="emailEnviado"></p>
+            <p id="mensajeEnviado"></p>
+        </div>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('formularioContacto');
+        const nombreInput = document.getElementById('nombre');
+        const emailInput = document.getElementById('email');
+        const mensajeInput = document.getElementById('mensaje');
+        const errorNombre = document.getElementById('errorNombre');
+        const errorEmail = document.getElementById('errorEmail');
+        const errorMensaje = document.getElementById('errorMensaje');
+        const datosEnviados = document.getElementById('datosEnviados');
+        const nombreEnviado = document.getElementById('nombreEnviado');
+        const emailEnviado = document.getElementById('emailEnviado');
+        const mensajeEnviado = document.getElementById('mensajeEnviado');
+
+        formulario.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const nombre = nombreInput.value.trim();
+            const email = emailInput.value.trim();
+            const mensaje = mensajeInput.value.trim();
+
+            let errores = false;
+
+            if (nombre === '') {
+                errorNombre.textContent = 'El nombre es obligatorio';
+                errores = true;
+            } else {
+                errorNombre.textContent = '';
+            }
+
+            if (!validarEmail(email)) {
+                errorEmail.textContent = 'Correo electrónico no válido';
+                errores = true }
+        }
+    )
+
+</script>
+
 </body>
 
 </html>

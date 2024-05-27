@@ -58,3 +58,55 @@ nav a:hover {
 nav div.generos{
     padding: 0px;
 }
+
+
+
+    
+
+
+.formulario {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.campo {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn-enviar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.datos-enviados {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}
