@@ -385,9 +385,10 @@ nav div.generos{
     }
     
     .btn-signup {
-        background: #fbfdff;
+        background: #e9eaea;
         color: blue;
-        box-shadow: inset 0 0 0 2px blue;
+        box-shadow: inset 0 0 0 2px rgb(24, 8, 236);
         transform: translateX(30%);
+
     }
     
