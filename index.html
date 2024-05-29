@@ -33,7 +33,7 @@
         <h1 class="titulo">PelisWeb</h1>
     </a>
     <a href="" class="Inicio">Inicio</a>
-    <a href="" class="Contacto">Contacto</a>
+    <a><button type="submit" class="btn-login-1">Iniciar Sesión</button></a>
     <a href="" class="SobreNosotros">Sobre Nosotros</a>
     
  </header>
@@ -75,43 +75,7 @@
        </div>
 
     </nav>
-   
-
-    <div class="formulario">
-        <form id="formularioContacto">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" class="input" required maxlength="50">
-                <span class="error" id="errorNombre"></span>
-            </div>
-
-            <div class="campo">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" class="input" required>
-                <span class="error" id="errorEmail"></span>
-            </div>
-
-            <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" class="input" required rows="5"></textarea>
-                <span class="error" id="errorMensaje"></span>
-            </div>
-
-            <div class="campo">
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </div>
-        </form>
-
-        <div class="datos-enviados" id="datosEnviados">
-            <h2>Datos Enviados</h2>
-            <p id="nombreEnviado"></p>
-            <p id="emailEnviado"></p>
-            <p id="mensajeEnviado"></p>
-        </div>
-    </div>
-
-    
-
+  
     <section class="forms-section">
         <h1 class="section-title"></h1>
         <div class="forms">
@@ -121,6 +85,9 @@
               <span class="underline"></span>
             </button>
             <form class="form form-login">
+              <span class="Icerrar">
+                <ion-icon name="close-circle"></ion-icon>
+              </span>
               <fieldset>
                 <legend>Por favor, introduzca su correo electrónico y contraseña para iniciar sesión.</legend>
                 <div class="input-block">
@@ -132,7 +99,7 @@
                   <input id="login-password" type="password" required>
                 </div>
               </fieldset>
-              <button type="submit" class="btn-login">LOGIN</button>
+              <button type="submit" class="btn-login">Iniciar Sesión</button>
             </form>
           </div>
           <div class="form-wrapper">
@@ -141,6 +108,9 @@
               <span class="underline"></span>
             </button>
             <form class="form form-signup">
+              <span class="Icerrar">
+                <ion-icon name="close-circle"></ion-icon>
+              </span>
               <fieldset>
                 <legend>Por favor, introduce tu email, contraseña y confirmación de contraseña para registrarte.</legend>
                 <div class="input-block">
@@ -156,7 +126,7 @@
                   <input id="signup-password-confirm" type="password" required>
                 </div>
               </fieldset>
-              <button type="submit" class="btn-signup">Continuar</button>
+              <button type="submit" class="btn-signup">Regístrarme</button>
             </form>
           </div>
           
@@ -168,5 +138,6 @@
       
       <script src="main.js"></script>
 </body>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
