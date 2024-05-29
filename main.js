@@ -10,6 +10,15 @@
         const nombreEnviado = document.getElementById('nombreEnviado');
         const emailEnviado = document.getElementById('emailEnviado');
         const mensajeEnviado = document.getElementById('mensajeEnviado');
+        const switchers = document.querySelectorAll('.switcher')
+       
+       
+        switchers.forEach(item => {
+             item.addEventListener('click', function() {
+                switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+                this.parentElement.classList.add('is-active')
+            })
+        })
 
         formulario.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -31,5 +40,8 @@
                 errorEmail.textContent = 'Correo electrónico no válido';
                 errores = true }
         }
+        
     )
-
+   
+    
+    
