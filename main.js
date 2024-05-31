@@ -1,5 +1,7 @@
 const form = document.getElementById('FormContacto');
 const resulta = document.getElementById('resultado');
+const resultadoenviado = document.createElement('p');
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -9,7 +11,7 @@ form.addEventListener('submit', (e) => {
   const telefono = e.target.telefono.value;
   const mensaje = e.target.mensaje.value;
 
-  if (!nombre ||!email ||!telefono ||!mensaje) {
+  if (nombre === '' || email === '' || telefono === '' || mensaje === '') {
     resulta.innerHTML = '<p>Por favor, completa todos los campos.</p>';
     return;
   }
@@ -22,3 +24,4 @@ form.addEventListener('submit', (e) => {
   resulta.innerHTML = '<p>Mensaje enviado</p>';
 
 })
+
