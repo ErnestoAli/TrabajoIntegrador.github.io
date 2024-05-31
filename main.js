@@ -4,10 +4,10 @@ const resulta = document.getElementById('resultado');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const nombre = e.target.name.value;
+  const nombre = e.target.nombre.value;
   const email = e.target.email.value;
-  const telefono = e.target.phone.value;
-  const mensaje = e.target.message.value;
+  const telefono = e.target.telefono.value;
+  const mensaje = e.target.mensaje.value;
 
   if (!nombre ||!email ||!telefono ||!mensaje) {
     resulta.innerHTML = '<p>Por favor, completa todos los campos.</p>';
