@@ -1,7 +1,7 @@
 body {
    font-family: "Audiowide", sans-serif;
    margin: 0;
-   /*background: linear-gradient(0deg, blue, yellow, blue);*/ 
+   background: linear-gradient(0deg, blue, yellow, blue);
 }
 a {
     color: black;
@@ -133,30 +133,6 @@ nav a:hover {
   #abc{
     margin: 60px;
   }
-
-.carrouselA img{
-  width: 100%;
-  height: 100%;
-}
-
-.carrouselA{
-  width: 100%;
-  position: relative;
-  height: 780px;
-}
-
-.btn{
-  font-size: 30px;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  color: black;
-  box-shadow: 0 0 10px black;
-}
 
 .btn:hover{
   cursor: pointer;
