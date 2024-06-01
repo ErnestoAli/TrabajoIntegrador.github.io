@@ -25,3 +25,37 @@ form.addEventListener('submit', (e) => {
 
 })
 
+var imagenes = ['FotosPeliculas/bannervaintensamente2.jpg', 'FotosPeliculas/garfielfueradecasa.jpg', 'FotosPeliculas/elplanetadelossimios.jpg']
+    cont = 0;
+
+ function Carrousel(carrouselA){
+  carrouselA.addEventListener('click', e  => {
+    let anterior = carrouselA.queryselector('.anterior'),
+        siguiente = carrouselA.queryselector('.siguiente'),
+        FotosPeliculas = carrouselA.queryselector('FotosPeliculas'),
+        tgt = e.target;
+
+    if(tgt == anterior){
+      if(cont > 0){
+        FotosPeliculas.src = imagenes[cont - 1];
+        cont--;
+    } else {
+      FotosPeliculas.src = imagenes[imagenes.length - 1];
+       cont = imagenes.length - 1;
+    } 
+   } else if(tgt == siguiente) {
+    if(cont < imagenes.length - 1){
+      FotosPeliculas.src = imagenes[cont + 1];
+      cont++;
+      } else {
+        FotosPeliculas.src = imagenes[0];
+        cont = 0;
+    }}
+
+ });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  let carrouselA = document.querySelector('.carrouselA');
+  Carrousel(carrouselA);
+});
