@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Carrusel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="container">
+  
+</div>
+
+<div class="-content -display-container">
+
+<div class="-display-container mySlides">
+  <img src="FotosPeliculas/bannervaintensamente2.jpg" style="width:100%">
+  <div class="-display-bottomleft -large -container -padding-16 w3-black">
+    Intensamente2
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="FotosPeliculas/elplanetadelossimios.jpg" style="width:100%">
+  <div class="-display-bottomright -large -container -padding-16 -black">
+    El Planeta De Los Simios
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="FotosPeliculas/garfielfueradecasa.jpg" style="width:100%">
+  <div class="-display-topleft -large -container -padding-16 -black">
+    Garfiel Fuera de Casa
+  </div>
+</div>
+
+<button class="-button izq -black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="-button derecho -black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
