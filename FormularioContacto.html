@@ -1,23 +1,26 @@
-<link rel="stylesheet" href="estilo.css">
-<form id="FormContacto">
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="estilo.css"></head>
+<body>
+<form id="formulario-contacto">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
 
-      <div class="btncerrar" style="float: right; margin-bottom: 10px;">
-        <ion-icon name="close-circle-outline" style="font-size: 24px; cursor: pointer;"></ion-icon>
-      </div> 
-      
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        
-        <button type="submit">Enviar</button>
-      </form>
-      
-      <div id="resultado"></div>
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" required>
+
+  <label for="comentario">Comentario:</label>
+ <textarea id="comentario" name="comentario"></textarea>
+ <div class="MensajeError" id="errorComentario"></div>
+
+  <button type="submit">Enviar</button>
+
+  <div id="mensaje-enviado"></div>
+  <div id="errores"></div>
+</form>
+<script src="main.js"></script>
+</body>
+</html>
