@@ -15,7 +15,8 @@ header {
 }
 
 .cabezal a{
-    margin: 200px;
+    float: right;
+    margin: 30px;
 }
 
 .logo {
@@ -101,33 +102,36 @@ nav a:hover {
     background-color: #f44336;
   }
 
+  .contenido{
+    width: 100%;
+    height: 100%;
+  }
+
   .generos {
     display: flex;
     flex-direction: column;
-    top: 155;
-    width: 200;
-    margin: 0px;
+    width: 15%;
+    height: 100%;
     position: relative;
-    padding: 20px;
+    float: left;
+
   }
-  
+
   .generos a {
-    margin-bottom: 50px;
+    margin: 50px;
+    margin-bottom: 100px;
     color: black;
     font-size: 25;
-    padding: 30;
   }
-
   .fotos{
-    top: 20px;
-    margin: 250;
-  }
+    float: right;
+    width: 85%;
+    height: 100%;
 
-  .fotos.a {
-    margin: 20;
   }
-
   #abc{
-    margin: 60px;
+    margin: 20px;
   }
+
+  
 
