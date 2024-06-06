@@ -110,7 +110,7 @@ nav a:hover {
   .generos {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 20%;
     height: 100%;
     position: relative;
     float: left;
@@ -125,7 +125,7 @@ nav a:hover {
   }
   .fotos{
     float: right;
-    width: 85%;
+    width: 80%;
     height: 100%;
 
   }
